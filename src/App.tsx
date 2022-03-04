@@ -1,11 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import './App.css';
 
-function App() {
+const App: React.FC<{}> = props => {
   return (
-    <div className="App">
-    </div>
+    <AppContainer className={"App"}>
+    </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div``;
