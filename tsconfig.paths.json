@@ -1,0 +1,10 @@
+// 절대경로 설정 - * 폴더 절대 경로 지정 시, 밑에 alias 추가
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@pages/*": ["src/pages/*"]
+        }
+    }
+}
