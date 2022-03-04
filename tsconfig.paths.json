@@ -1,4 +1,4 @@
-// 절대경로 설정 - * 폴더 절대 경로 지정 시, 밑에 alias 추가
+// 절대경로 설정 - * 폴더 절대 경로 지정 시, 밑에 alias 추가. https://bgradecoding.tistory.com/14
 {
     "compilerOptions": {
         "baseUrl": "./",
