@@ -7,7 +7,7 @@ import Layout from "@components/layout/Layout";
 const App: React.FC<unknown> = () => {
   return (
     <AppContainer className={"App"}>
-      <Layout></Layout>
+      <Layout>{process.env.REACT_APP_API_URL}</Layout>
     </AppContainer>
   );
 };
