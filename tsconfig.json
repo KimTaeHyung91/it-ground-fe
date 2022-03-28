@@ -4,17 +4,24 @@
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "checkJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  }
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true
+  },
+  "include": ["src", "tsconfig.paths.json"],
+  "exclude": ["node_modules", "**/node_modules/*"]
 }

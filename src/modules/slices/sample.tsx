@@ -1,6 +1,6 @@
+import { _sampleGetCount } from "@modules/api/sample";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import asyncThunk from "../../utils/thunk";
-import { _sampleGetCount } from "../api/sample";
+import asyncThunk from "@utils/thunk";
 import { SampleState } from "../type/sample";
 
 // init state

@@ -1,6 +1,6 @@
+import { getCount, initCount, onChangeCount } from "@modules/slices/sample";
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCount, initCount, onChangeCount } from "../modules/slices/sample";
 
 // redux sample custom hooks
 const useSample = () => {

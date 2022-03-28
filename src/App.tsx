@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Layout from "@components/common/layout/Layout";
-import useSample from "./hooks/useSample";
+import useSample from "@hooks/useSample";
 
 const App: React.FC<unknown> = () => {
   const { count, tempCount, onChange, init } = useSample();
