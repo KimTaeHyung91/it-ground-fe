@@ -9,12 +9,12 @@ module.exports = {
     es6: true,
   },
   extends: [
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
-    "plugin:import/typescript",
-    "prettier/@typescript-eslint",
-    "prettier/react",
+    "plugin:react-hooks/recommended",
+    "eslint:recommended",
   ],
   overrides: [
     {
