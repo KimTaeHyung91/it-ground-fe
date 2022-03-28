@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import sample from "./Sample";
+import sample from "./sample";
 
 export type RootState = ReturnType<typeof rootReducer>;
 declare module "react-redux" {
