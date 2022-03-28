@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import styled from "styled-components";
 
-import Layout from "@components/layout/Layout";
+import Layout from "@components/common/layout/Layout";
 
 const App: React.FC<unknown> = () => {
   return (

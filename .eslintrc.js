@@ -1,26 +1,28 @@
 // https://velog.io/@kmlee95/React-Typescript-eslint-prettier%EC%84%A4%EC%A0%95
 module.exports = {
+  root: true,
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier"],
-  extends: [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended",
-    "eslint:recommended",
+  plugins: ["@typescript-eslint"],
+  extends: ["plugin:@typescript-eslint/recommended"],
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: {
+        "@typescript-eslint/no-shadow": ["warn"],
+        "no-shadow": "off", // Disallows variable declarations from shadowing variables declared in the outer scope. : off
+      },
+    },
   ],
-  rules: {
-    "linebreak-style": 0,
-    "import/prefer-default-export": 0,
-    "prettier/prettier": 0,
-    "import/extensions": 0,
-    "no-use-before-define": 0,
-    "import/no-unresolved": 0,
-    "import/no-extraneous-dependencies": 0, // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
-    "no-shadow": 0,
-    "react/prop-types": 0,
-    "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
-    "jsx-a11y/no-noninteractive-element-interactions": 0,
+  settings: {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
+    "import/resolver": {
+      "babel-module": {},
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };
