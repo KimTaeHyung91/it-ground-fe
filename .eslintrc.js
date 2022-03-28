@@ -16,12 +16,18 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "eslint:recommended",
   ],
+  rules: {
+    "@typescript-eslint/no-var-requires": 0,
+  },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
       rules: {
         "@typescript-eslint/no-shadow": ["warn"],
         "no-shadow": "off", // Disallows variable declarations from shadowing variables declared in the outer scope. : off
+        "no-unused-vars": ["warn", { vars: "all", args: "after-used", ignoreRestSiblings: false }],
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/no-explicit-any": ["off"],
       },
     },
   ],
